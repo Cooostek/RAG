@@ -1,0 +1,656 @@
+2026-02-21 14:50:21,625 | INFO | main | Запуск Flask API...
+2026-02-21 14:51:44,407 | INFO | search_engine | Инициализация поискового движка...
+2026-02-21 15:03:47,203 | INFO | main | Запуск Flask API...
+2026-02-21 15:22:18,810 | INFO | main | Запуск Flask API...
+2026-02-21 15:27:51,365 | INFO | main | Запуск Flask API...
+2026-02-21 15:36:54,368 | INFO | main | Запуск Flask API...
+2026-02-21 15:57:50,793 | INFO | scheduler | Плановый запуск ingestion pipeline...
+2026-02-21 15:57:50,793 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-02-21 15:57:52,889 | INFO | main | Запуск Flask API...
+2026-02-21 15:57:53,159 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-02-21 15:57:54,069 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-02-21 15:57:55,809 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-02-21 15:57:57,666 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-02-21 15:57:57,666 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-02-21 15:57:59,279 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-02-21 15:58:01,335 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-02-21 15:58:03,539 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-02-21 15:58:04,706 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-02-21 15:58:05,693 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-02-21 15:58:07,191 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-02-21 15:58:09,158 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-02-21 15:58:10,045 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-02-21 15:58:11,567 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-02-21 15:58:13,275 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-02-21 15:58:14,793 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-02-21 15:58:16,502 | INFO | parser | Парсинг завершен. Документов: 497
+2026-02-21 16:06:13,810 | INFO | embedder | Обучение TF-IDF vectorizer...
+2026-02-21 16:06:13,836 | INFO | embedder | Создание dense embeddings...
+2026-02-21 16:06:53,243 | INFO | embedder | Создание sparse embeddings...
+2026-02-21 16:06:53,369 | INFO | embedder | Dense сохранен: /app/data/processed/knowledge_base_v20260221_155816_dense.npy
+2026-02-21 16:06:53,370 | INFO | embedder | Sparse сохранен: /app/data/processed/knowledge_base_v20260221_155816_sparse.npz
+2026-02-21 16:06:53,370 | INFO | embedder | Vectorizer сохранен: /app/data/models/tfidf_vectorizer.pkl
+2026-02-21 16:06:53,432 | INFO | milvus_indexer | Вставка 497 записей в knowledge_base_v20260221_155816...
+2026-02-21 16:06:56,913 | INFO | milvus_indexer | Создание индексов...
+2026-02-21 16:06:59,456 | INFO | milvus_indexer | Индексы созданы, коллекция загружена
+2026-02-21 16:06:59,458 | INFO | milvus_indexer | Переключение alias knowledge_base_current -> knowledge_base_v20260221_155816
+2026-02-21 16:06:59,471 | INFO | pipeline | Pipeline завершен: knowledge_base_v20260221_155816, docs=497
+2026-02-21 16:06:59,471 | INFO | scheduler | Pipeline result: {'status': 'success', 'collection_version': 'knowledge_base_v20260221_155816', 'docs_count': 497}
+2026-02-21 16:08:12,139 | INFO | search_engine | Инициализация поискового движка...
+2026-02-21 16:11:07,759 | INFO | search_engine | Инициализация поискового движка...
+2026-02-21 16:13:07,746 | INFO | search_engine | Инициализация поискового движка...
+2026-02-21 16:13:17,021 | INFO | search_engine | Инициализация поискового движка...
+2026-02-21 16:15:56,982 | INFO | search_engine | Инициализация поискового движка...
+2026-02-21 16:18:46,888 | ERROR | main | Exception on /ask [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/api/routes_search.py", line 34, in ask
+    results = engine.search(question, top_k=top_k, alpha=alpha)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/search/engine.py", line 69, in search
+    self.initialize()
+  File "/app/app/search/engine.py", line 29, in initialize
+    self.dense_model = SentenceTransformer("intfloat/multilingual-e5-base")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 316, in __init__
+    self.to(device)
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1173, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  [Previous line repeated 4 more times]
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 804, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1166, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2026-02-21 16:22:42,095 | INFO | main | Запуск Flask API...
+2026-02-21 16:22:52,495 | INFO | main | Создаю HybridSearchEngine (первый запрос)...
+2026-02-21 16:22:52,496 | INFO | main | HybridSearchEngine готов
+2026-02-21 16:22:52,496 | INFO | search_engine | Инициализация поискового движка...
+2026-02-21 16:22:58,617 | INFO | search_engine | Поисковый движок инициализирован
+2026-02-21 16:22:59,849 | ERROR | main | Exception on /ask [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/api/routes_search.py", line 46, in ask
+    results = engine.search(question, top_k=top_k, alpha=alpha)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/search/engine.py", line 140, in search
+    "text": h.entity.get("text", ""),
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Hit.get() takes 2 positional arguments but 3 were given
+2026-02-21 16:26:23,269 | INFO | main | Запуск Flask API...
+2026-02-21 16:26:34,307 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-02-21 16:26:34,308 | INFO | routes_search | HybridSearchEngine готов
+2026-02-21 16:26:34,308 | INFO | search_engine | Инициализация поискового движка...
+2026-02-21 16:32:19,609 | INFO | search_engine | Инициализация поискового движка...
+2026-02-21 16:34:46,754 | INFO | search_engine | Поисковый движок инициализирован
+2026-02-21 16:34:46,967 | INFO | search_engine | Поисковый движок инициализирован
+2026-02-21 16:34:47,579 | ERROR | generator | Ollama error: HTTPConnectionPool(host='host.docker.internal', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='host.docker.internal', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-04 18:04:04,005 | INFO | scheduler | Плановый запуск ingestion pipeline...
+2026-03-04 18:04:04,005 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 18:04:04,038 | INFO | main | Запуск Flask API...
+2026-03-04 18:04:05,755 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 18:04:06,589 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 18:04:08,272 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 18:04:09,705 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 18:04:09,705 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 18:04:11,279 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 18:04:13,047 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 18:04:14,458 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 18:04:15,579 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 18:04:16,445 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 18:04:17,817 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 18:04:19,268 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 18:04:20,120 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 18:04:21,505 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 18:04:22,922 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 18:04:24,279 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 18:04:25,743 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 18:09:46,751 | INFO | embedder | Обучение TF-IDF vectorizer...
+2026-03-04 18:09:46,774 | INFO | embedder | Создание dense embeddings...
+2026-03-04 18:10:21,170 | INFO | embedder | Создание sparse embeddings...
+2026-03-04 18:10:21,291 | INFO | embedder | Dense сохранен: /app/data/processed/knowledge_base_v20260304_180425_dense.npy
+2026-03-04 18:10:21,291 | INFO | embedder | Sparse сохранен: /app/data/processed/knowledge_base_v20260304_180425_sparse.npz
+2026-03-04 18:10:21,291 | INFO | embedder | Vectorizer сохранен: /app/data/models/tfidf_vectorizer.pkl
+2026-03-04 18:10:21,341 | INFO | milvus_indexer | Вставка 497 записей в knowledge_base_v20260304_180425...
+2026-03-04 18:10:25,770 | INFO | milvus_indexer | Создание индексов...
+2026-03-04 18:10:29,218 | INFO | milvus_indexer | Индексы созданы, коллекция загружена
+2026-03-04 18:10:29,220 | INFO | milvus_indexer | Переключение alias knowledge_base_current -> knowledge_base_v20260304_180425
+2026-03-04 18:10:29,231 | INFO | pipeline | Pipeline завершен: knowledge_base_v20260304_180425, docs=497
+2026-03-04 18:10:29,232 | INFO | scheduler | Pipeline result: {'status': 'success', 'collection_version': 'knowledge_base_v20260304_180425', 'docs_count': 497}
+2026-03-04 18:18:28,574 | INFO | scheduler | Плановый запуск ingestion pipeline...
+2026-03-04 18:18:28,575 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 18:18:28,594 | INFO | main | Запуск Flask API...
+2026-03-04 18:18:30,397 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 18:18:31,232 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 18:18:32,702 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 18:18:34,054 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 18:18:34,054 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 18:18:35,549 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 18:18:37,323 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 18:18:38,788 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 18:18:39,958 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 18:18:40,854 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 18:18:42,261 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 18:18:43,671 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 18:18:44,527 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 18:19:02,191 | INFO | main | Запуск Flask API...
+2026-03-04 18:19:02,230 | INFO | scheduler | Плановый запуск ingestion pipeline...
+2026-03-04 18:19:02,230 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 18:19:02,633 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 18:19:02,873 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 18:21:36,302 | INFO | main | Запуск Flask API...
+2026-03-04 18:21:36,341 | INFO | scheduler | Плановый запуск ingestion pipeline...
+2026-03-04 18:21:36,342 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 18:21:38,144 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 18:21:38,986 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 18:21:40,470 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 18:21:41,831 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 18:21:41,831 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 18:21:43,320 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 18:21:45,095 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 18:21:46,558 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 18:21:47,707 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 18:21:48,601 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 18:21:49,982 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 18:21:51,361 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 18:21:52,200 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 18:21:53,781 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 18:21:55,263 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 18:21:56,677 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 18:21:58,108 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 18:21:58,125 | INFO | pipeline | Изменений в данных нет, переиндексация не нужна
+2026-03-04 18:21:58,128 | INFO | scheduler | Pipeline result: {'status': 'skipped_no_changes', 'docs_count': 497}
+2026-03-04 18:22:08,523 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 18:22:18,400 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-03-04 18:22:18,401 | INFO | routes_search | HybridSearchEngine готов
+2026-03-04 18:22:18,402 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 18:26:57,081 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 18:26:57,113 | ERROR | routes_search | Ошибка в /ask
+Traceback (most recent call last):
+  File "/app/app/api/routes_search.py", line 58, in ask
+    results = engine.search(question, top_k=top_k, alpha=alpha)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/search/engine.py", line 85, in search
+    self.initialize()
+  File "/app/app/search/engine.py", line 32, in initialize
+    self.dense_model = SentenceTransformer(
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 316, in __init__
+    self.to(device)
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1173, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 804, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1166, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2026-03-04 18:39:44,926 | INFO | main | Запуск Flask API...
+2026-03-04 18:39:45,906 | INFO | scheduler | Плановый запуск ingestion pipeline...
+2026-03-04 18:39:45,906 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 18:39:47,553 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 18:39:48,409 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 18:39:49,977 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 18:39:51,345 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 18:39:51,345 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 18:39:52,849 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 18:39:54,727 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 18:39:56,193 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 18:39:57,344 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 18:39:58,241 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 18:39:59,656 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 18:40:01,074 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 18:40:01,922 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 18:40:03,357 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 18:40:04,839 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 18:40:06,446 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 18:40:07,865 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 18:40:07,884 | INFO | pipeline | Изменений в данных нет, переиндексация не нужна
+2026-03-04 18:40:07,887 | INFO | scheduler | Pipeline result: {'status': 'skipped_no_changes', 'docs_count': 497}
+2026-03-04 18:40:28,640 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-03-04 18:40:28,641 | INFO | routes_search | HybridSearchEngine готов
+2026-03-04 18:40:28,642 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 18:41:23,000 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 18:51:16,130 | ERROR | routes_search | Ошибка в /ask
+Traceback (most recent call last):
+  File "/app/app/api/routes_search.py", line 58, in ask
+    results = engine.search(question, top_k=top_k, alpha=alpha)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/search/engine.py", line 85, in search
+    self.initialize()
+  File "/app/app/search/engine.py", line 41, in initialize
+    self.collection = Collection(settings.MILVUS_COLLECTION_ALIAS)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymilvus/orm/collection.py", line 140, in __init__
+    raise SchemaNotReadyException(
+pymilvus.exceptions.SchemaNotReadyException: <SchemaNotReadyException: (code=1, message=Collection 'knowledge_base_current' not exist, or you can pass in schema to create one.)>
+2026-03-04 18:51:16,327 | ERROR | routes_search | Ошибка в /search
+Traceback (most recent call last):
+  File "/app/app/api/routes_search.py", line 38, in search_only
+    results = engine.search(query, top_k=top_k, alpha=alpha)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/search/engine.py", line 85, in search
+    self.initialize()
+  File "/app/app/search/engine.py", line 41, in initialize
+    self.collection = Collection(settings.MILVUS_COLLECTION_ALIAS)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymilvus/orm/collection.py", line 140, in __init__
+    raise SchemaNotReadyException(
+pymilvus.exceptions.SchemaNotReadyException: <SchemaNotReadyException: (code=1, message=Collection 'knowledge_base_current' not exist, or you can pass in schema to create one.)>
+2026-03-04 19:13:07,398 | INFO | main | Запуск Flask API...
+2026-03-04 19:13:08,289 | INFO | scheduler | Плановый запуск ingestion pipeline... FORCE_REINDEX=False
+2026-03-04 19:13:08,289 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 19:13:09,981 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 19:13:11,412 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 19:13:12,968 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 19:13:14,331 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 19:13:14,331 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 19:13:17,790 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 19:13:19,558 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 19:13:21,172 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 19:13:22,336 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 19:13:23,250 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 19:13:24,654 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 19:13:26,072 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 19:13:26,913 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 19:13:28,317 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 19:13:29,768 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 19:13:31,166 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 19:13:32,691 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 19:13:32,725 | WARNING | pipeline | Milvus пустой/алиас 'knowledge_base_current' не найден -> форсирую переиндексацию
+2026-03-04 19:20:50,029 | INFO | embedder | Обучение TF-IDF vectorizer...
+2026-03-04 19:20:50,051 | INFO | embedder | Создание dense embeddings...
+2026-03-04 19:21:25,232 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 19:21:26,839 | INFO | embedder | Создание sparse embeddings...
+2026-03-04 19:21:26,949 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 19:21:26,960 | INFO | embedder | Dense сохранен: /app/data/processed/knowledge_base_v20260304_191332_dense.npy
+2026-03-04 19:21:26,960 | INFO | embedder | Sparse сохранен: /app/data/processed/knowledge_base_v20260304_191332_sparse.npz
+2026-03-04 19:21:26,960 | INFO | embedder | Vectorizer сохранен: /app/data/models/tfidf_vectorizer.pkl
+2026-03-04 19:21:27,014 | INFO | milvus_indexer | Вставка 497 записей в knowledge_base_v20260304_191332...
+2026-03-04 19:21:27,784 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 19:21:30,002 | INFO | milvus_indexer | Создание индексов...
+2026-03-04 19:21:31,016 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 19:21:32,444 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 19:21:32,444 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 19:21:33,443 | INFO | milvus_indexer | Индексы созданы, коллекция загружена
+2026-03-04 19:21:33,445 | INFO | milvus_indexer | Переключение alias knowledge_base_current -> knowledge_base_v20260304_191332
+2026-03-04 19:21:33,465 | INFO | pipeline | Pipeline завершен: knowledge_base_v20260304_191332, docs=497
+2026-03-04 19:21:33,465 | INFO | scheduler | Pipeline result: {'status': 'success', 'collection_version': 'knowledge_base_v20260304_191332', 'docs_count': 497}
+2026-03-04 19:21:33,929 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 19:21:35,683 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 19:21:37,131 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 19:21:38,296 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 19:21:39,206 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 19:21:40,619 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 19:21:42,048 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 19:21:43,029 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 19:21:44,445 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 19:21:46,664 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 19:21:49,238 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 19:21:50,664 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 19:21:55,510 | INFO | embedder | Обучение TF-IDF vectorizer...
+2026-03-04 19:21:55,533 | INFO | embedder | Создание dense embeddings...
+2026-03-04 19:22:29,952 | INFO | embedder | Создание sparse embeddings...
+2026-03-04 19:22:30,062 | INFO | embedder | Dense сохранен: /app/data/processed/knowledge_base_v20260304_192150_dense.npy
+2026-03-04 19:22:30,062 | INFO | embedder | Sparse сохранен: /app/data/processed/knowledge_base_v20260304_192150_sparse.npz
+2026-03-04 19:22:30,062 | INFO | embedder | Vectorizer сохранен: /app/data/models/tfidf_vectorizer.pkl
+2026-03-04 19:22:30,112 | INFO | milvus_indexer | Вставка 497 записей в knowledge_base_v20260304_192150...
+2026-03-04 19:22:33,281 | INFO | milvus_indexer | Создание индексов...
+2026-03-04 19:22:35,815 | INFO | milvus_indexer | Индексы созданы, коллекция загружена
+2026-03-04 19:22:35,817 | INFO | milvus_indexer | Переключение alias knowledge_base_current -> knowledge_base_v20260304_192150
+2026-03-04 19:22:35,827 | INFO | pipeline | Pipeline завершен: knowledge_base_v20260304_192150, docs=497
+2026-03-04 19:47:32,793 | INFO | main | Warmup: инициализирую поисковый движок...
+2026-03-04 19:47:32,793 | INFO | main | Запуск Flask API...
+2026-03-04 19:47:32,795 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 19:47:33,211 | WARNING | main | Warmup failed: <SchemaNotReadyException: (code=1, message=Collection 'knowledge_base_current' not exist, or you can pass in schema to create one.)>
+2026-03-04 19:47:33,617 | INFO | scheduler | Плановый запуск ingestion pipeline... FORCE_REINDEX=False
+2026-03-04 19:47:33,617 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 19:47:35,631 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 19:47:36,498 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 19:47:38,109 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 19:47:39,701 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 19:47:39,701 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 19:47:41,269 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 19:47:43,124 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 19:47:44,677 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 19:47:45,885 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 19:47:47,076 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 19:47:48,963 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 19:47:50,436 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 19:47:51,311 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 19:47:52,791 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 19:47:54,326 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 19:47:55,786 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 19:47:57,257 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 19:47:57,290 | WARNING | pipeline | Milvus пустой/алиас 'knowledge_base_current' не найден -> форсирую переиндексацию
+2026-03-04 19:56:11,313 | INFO | embedder | Обучение TF-IDF vectorizer...
+2026-03-04 19:56:11,337 | INFO | embedder | Создание dense embeddings...
+2026-03-04 19:56:45,695 | INFO | embedder | Создание sparse embeddings...
+2026-03-04 19:56:45,810 | INFO | embedder | Dense сохранен: /app/data/processed/knowledge_base_v20260304_194757_dense.npy
+2026-03-04 19:56:45,810 | INFO | embedder | Sparse сохранен: /app/data/processed/knowledge_base_v20260304_194757_sparse.npz
+2026-03-04 19:56:45,810 | INFO | embedder | Vectorizer сохранен: /app/data/models/tfidf_vectorizer.pkl
+2026-03-04 19:56:45,859 | INFO | milvus_indexer | Вставка 497 записей в knowledge_base_v20260304_194757...
+2026-03-04 19:56:48,830 | INFO | milvus_indexer | Создание индексов...
+2026-03-04 19:56:51,869 | INFO | milvus_indexer | Индексы созданы, коллекция загружена
+2026-03-04 19:56:51,871 | INFO | milvus_indexer | Переключение alias knowledge_base_current -> knowledge_base_v20260304_194757
+2026-03-04 19:56:51,882 | INFO | pipeline | Pipeline завершен: knowledge_base_v20260304_194757, docs=497
+2026-03-04 19:56:51,882 | INFO | scheduler | Pipeline result: {'status': 'success', 'collection_version': 'knowledge_base_v20260304_194757', 'docs_count': 497}
+2026-03-04 20:04:25,708 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 20:04:25,708 | INFO | main | Запуск Flask API...
+2026-03-04 20:04:25,725 | INFO | main | Warmup: алиас/коллекция найдены, инициализирую поисковый движок...
+2026-03-04 20:04:25,726 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 20:05:28,904 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 20:05:30,553 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 20:05:31,444 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 20:05:33,058 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:05:34,419 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:05:34,420 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 20:05:36,513 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 20:05:38,483 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 20:05:40,060 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 20:05:41,282 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 20:05:42,246 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 20:05:43,735 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 20:05:45,235 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 20:05:46,113 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 20:05:47,596 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 20:05:49,137 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 20:05:50,618 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 20:05:52,107 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 20:05:57,028 | INFO | embedder | Обучение TF-IDF vectorizer...
+2026-03-04 20:05:57,052 | INFO | embedder | Создание dense embeddings...
+2026-03-04 20:06:33,721 | INFO | embedder | Создание sparse embeddings...
+2026-03-04 20:06:33,851 | INFO | embedder | Dense сохранен: /app/data/processed/knowledge_base_v20260304_200552_dense.npy
+2026-03-04 20:06:33,851 | INFO | embedder | Sparse сохранен: /app/data/processed/knowledge_base_v20260304_200552_sparse.npz
+2026-03-04 20:06:33,851 | INFO | embedder | Vectorizer сохранен: /app/data/models/tfidf_vectorizer.pkl
+2026-03-04 20:06:33,901 | INFO | milvus_indexer | Вставка 497 записей в knowledge_base_v20260304_200552...
+2026-03-04 20:06:36,813 | INFO | milvus_indexer | Создание индексов...
+2026-03-04 20:06:40,058 | INFO | milvus_indexer | Индексы созданы, коллекция загружена
+2026-03-04 20:06:40,061 | INFO | milvus_indexer | Переключение alias knowledge_base_current -> knowledge_base_v20260304_200552
+2026-03-04 20:06:40,071 | INFO | pipeline | Pipeline завершен: knowledge_base_v20260304_200552, docs=497
+2026-03-04 20:11:14,696 | INFO | scheduler | Плановый запуск ingestion pipeline... FORCE_REINDEX=False
+2026-03-04 20:11:14,696 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 20:11:16,181 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 20:11:17,082 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 20:11:18,715 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:11:20,782 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:11:20,783 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 20:11:22,349 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 20:11:24,196 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 20:11:25,900 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 20:11:27,125 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 20:11:28,064 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 20:11:29,542 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 20:11:31,008 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 20:11:31,989 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 20:11:33,468 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 20:11:34,994 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 20:11:36,454 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 20:11:38,517 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 20:11:38,557 | WARNING | pipeline | Milvus пустой/алиас 'knowledge_base_current' не найден -> форсирую переиндексацию
+2026-03-04 20:14:36,805 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 20:14:36,805 | INFO | main | Запуск Flask API...
+2026-03-04 20:14:38,113 | INFO | scheduler | Плановый запуск ingestion pipeline... FORCE_REINDEX=False
+2026-03-04 20:14:38,113 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 20:14:40,057 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 20:14:40,969 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 20:14:42,655 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:14:44,145 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:14:44,145 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 20:14:45,760 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 20:14:47,690 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 20:14:49,269 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 20:14:50,494 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 20:14:51,460 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 20:14:52,961 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 20:14:54,447 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 20:14:55,363 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 20:14:56,847 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 20:14:58,375 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 20:14:59,853 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 20:15:01,338 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 20:15:01,371 | WARNING | pipeline | Milvus пустой/алиас 'knowledge_base_current' не найден -> форсирую переиндексацию
+2026-03-04 20:18:23,046 | INFO | scheduler | Плановый запуск ingestion pipeline... FORCE_REINDEX=False
+2026-03-04 20:18:23,046 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 20:18:24,769 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 20:18:25,646 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 20:18:27,255 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:18:28,669 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:18:28,669 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 20:18:30,236 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 20:18:32,082 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 20:18:33,619 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 20:18:34,844 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 20:18:35,785 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 20:18:37,246 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 20:18:38,710 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 20:18:39,584 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 20:18:41,338 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 20:18:42,932 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 20:18:44,452 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 20:18:45,956 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 20:18:45,991 | WARNING | pipeline | Milvus пустой/алиас 'knowledge_base_current' не найден -> форсирую переиндексацию
+2026-03-04 20:19:37,989 | WARNING | main | Milvus wait timeout: alias/collection 'knowledge_base_current' not ready. Last error: None
+2026-03-04 20:19:37,989 | WARNING | main | Warmup: пропущен (коллекция/алиас не появился)
+2026-03-04 20:23:40,020 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 20:23:41,917 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 20:23:42,802 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 20:23:44,715 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:23:46,192 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:23:46,192 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 20:23:47,825 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 20:23:49,744 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 20:23:51,350 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 20:23:52,600 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 20:23:53,605 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 20:23:55,139 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 20:23:56,657 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 20:23:57,536 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 20:23:59,042 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 20:24:00,589 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 20:24:02,097 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 20:24:03,580 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 20:24:03,613 | WARNING | pipeline | Milvus пустой/алиас 'knowledge_base_current' не найден -> форсирую переиндексацию
+2026-03-04 20:24:38,713 | INFO | embedder | Обучение TF-IDF vectorizer...
+2026-03-04 20:24:38,738 | INFO | embedder | Создание dense embeddings...
+2026-03-04 20:25:15,833 | INFO | embedder | Создание sparse embeddings...
+2026-03-04 20:25:15,959 | INFO | embedder | Dense сохранен: /app/data/processed/knowledge_base_v20260304_201846_dense.npy
+2026-03-04 20:25:15,960 | INFO | embedder | Sparse сохранен: /app/data/processed/knowledge_base_v20260304_201846_sparse.npz
+2026-03-04 20:25:15,960 | INFO | embedder | Vectorizer сохранен: /app/data/models/tfidf_vectorizer.pkl
+2026-03-04 20:25:16,018 | INFO | milvus_indexer | Вставка 497 записей в knowledge_base_v20260304_201846...
+2026-03-04 20:25:19,004 | INFO | milvus_indexer | Создание индексов...
+2026-03-04 20:25:22,254 | INFO | milvus_indexer | Индексы созданы, коллекция загружена
+2026-03-04 20:25:22,256 | INFO | milvus_indexer | Переключение alias knowledge_base_current -> knowledge_base_v20260304_201846
+2026-03-04 20:25:22,268 | INFO | pipeline | Pipeline завершен: knowledge_base_v20260304_201846, docs=497
+2026-03-04 20:25:22,268 | INFO | scheduler | Pipeline result: {'status': 'success', 'collection_version': 'knowledge_base_v20260304_201846', 'docs_count': 497}
+2026-03-04 20:28:59,719 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 20:28:59,719 | INFO | main | Запуск Flask API...
+2026-03-04 20:29:00,955 | INFO | scheduler | Плановый запуск ingestion pipeline... FORCE_REINDEX=False
+2026-03-04 20:29:00,966 | INFO | scheduler | Milvus доступен
+2026-03-04 20:29:00,966 | INFO | pipeline | Pipeline start. force=False
+2026-03-04 20:29:00,967 | INFO | parser | Загрузка стартовой страницы: https://micro.im/docs/smarty/portal-and-apps-settings
+2026-03-04 20:29:02,520 | INFO | parser | [1/15] Способы конфигурации приложений -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/portal-config-methods
+2026-03-04 20:29:03,463 | INFO | parser | [2/15] Опции портала -> https://micro.im/docs/smarty/portal-and-apps-settings/portal-settings
+2026-03-04 20:29:05,134 | INFO | parser | [3/15] Опции интерфейса focus -> https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:29:06,553 | ERROR | parser | Ошибка загрузки https://micro.im/docs/smarty/portal-and-apps-settings/focus-settings: 404 Client Error: Not Found for url: https://microimpuls.com/docs/smarty/portal-and-apps-settings/focus-settings
+2026-03-04 20:29:06,553 | INFO | parser | [4/15] Опции интерфейса impuls -> https://micro.im/docs/smarty/portal-and-apps-settings/impuls-settings
+2026-03-04 20:29:08,117 | INFO | parser | [5/15] Опции интерфейса futuristic -> https://micro.im/docs/smarty/portal-and-apps-settings/futuristic-settings
+2026-03-04 20:29:09,970 | INFO | parser | [6/15] Опции интерфейса infinitly -> https://micro.im/docs/smarty/portal-and-apps-settings/infinitly-settings
+2026-03-04 20:29:11,496 | INFO | parser | [7/15] Опции интерфейса sibseti -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/sibseti-settings
+2026-03-04 20:29:12,688 | INFO | parser | [8/15] Опции интерфейса redmax -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/%d0%be%d0%bf%d1%86%d0%b8%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-redmax
+2026-03-04 20:29:13,630 | INFO | parser | [9/15] Как поменять шаблон оформления -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-change-template
+2026-03-04 20:29:15,094 | INFO | parser | [10/15] Как включить интерфейс Futuristic X -> https://micro.im/docs/smarty/portal-and-apps-settings/how-to-activate-futuristic-x
+2026-03-04 20:29:16,873 | INFO | parser | [11/15] Дашборд в Futuristic -> https://microimpuls.com/docs/smarty/portal-and-apps-settings/dashboard-futuristic
+2026-03-04 20:29:17,775 | INFO | parser | [12/15] Диплинки -> https://micro.im/docs/smarty/portal-and-apps-settings/deeplinks
+2026-03-04 20:29:19,305 | INFO | parser | [13/15] Опции мобильного приложения -> https://micro.im/docs/smarty/portal-and-apps-settings/mobile-app-settings
+2026-03-04 20:29:20,855 | INFO | parser | [14/15] Режим Stand-By -> https://micro.im/docs/smarty/portal-and-apps-settings/stand-by
+2026-03-04 20:29:22,358 | INFO | parser | [15/15] Пин-коды -> https://micro.im/docs/smarty/portal-and-apps-settings/pin-code
+2026-03-04 20:29:23,841 | INFO | parser | Парсинг завершен. Документов: 497
+2026-03-04 20:29:23,865 | WARNING | pipeline | Milvus пустой/алиас 'knowledge_base_current' не найден -> форсирую переиндексацию
+2026-03-04 20:29:23,865 | INFO | pipeline | Нормализация документов...
+2026-03-04 20:29:23,886 | INFO | pipeline | Embedder: fit_sparse (TF-IDF)...
+2026-03-04 20:33:02,401 | INFO | embedder | Обучение TF-IDF vectorizer...
+2026-03-04 20:33:02,425 | INFO | pipeline | Embedder: create_dense...
+2026-03-04 20:33:02,425 | INFO | embedder | Создание dense embeddings...
+2026-03-04 20:33:39,112 | INFO | pipeline | Embedder: create_sparse...
+2026-03-04 20:33:39,112 | INFO | embedder | Создание sparse embeddings...
+2026-03-04 20:33:39,130 | INFO | pipeline | Embedder: save_artifacts...
+2026-03-04 20:33:39,239 | INFO | embedder | Dense сохранен: /app/data/processed/knowledge_base_v20260304_202923_dense.npy
+2026-03-04 20:33:39,239 | INFO | embedder | Sparse сохранен: /app/data/processed/knowledge_base_v20260304_202923_sparse.npz
+2026-03-04 20:33:39,239 | INFO | embedder | Vectorizer сохранен: /app/data/models/tfidf_vectorizer.pkl
+2026-03-04 20:33:39,240 | INFO | pipeline | Milvus: insert_documents -> knowledge_base_v20260304_202923 ...
+2026-03-04 20:33:39,292 | INFO | milvus_indexer | Вставка 497 записей в knowledge_base_v20260304_202923...
+2026-03-04 20:33:42,080 | INFO | milvus_indexer | Создание индексов...
+2026-03-04 20:33:45,023 | INFO | milvus_indexer | Индексы созданы, коллекция загружена
+2026-03-04 20:33:45,026 | INFO | pipeline | Milvus: switch_alias knowledge_base_current -> knowledge_base_v20260304_202923
+2026-03-04 20:33:45,026 | INFO | milvus_indexer | Переключение alias knowledge_base_current -> knowledge_base_v20260304_202923
+2026-03-04 20:33:45,032 | INFO | pipeline | Milvus: cleanup_old_collections...
+2026-03-04 20:33:45,039 | INFO | pipeline | Pipeline завершен: knowledge_base_v20260304_202923, docs=497
+2026-03-04 20:33:45,040 | INFO | scheduler | Pipeline result: {'status': 'success', 'collection_version': 'knowledge_base_v20260304_202923', 'docs_count': 497}
+2026-03-04 20:33:46,603 | INFO | main | Warmup: алиас/коллекция найдены, инициализирую поисковый движок...
+2026-03-04 20:33:46,604 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 20:38:00,570 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-03-04 20:38:00,571 | INFO | routes_search | HybridSearchEngine создан (инициализация будет при первом поиске)
+2026-03-04 20:38:00,572 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 20:39:57,253 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 20:40:25,086 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 20:40:25,342 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 20:40:25,346 | INFO | main | Warmup: поисковый движок готов
+2026-03-04 20:40:25,352 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 20:40:26,462 | ERROR | generator | Ollama error: HTTPConnectionPool(host='host.docker.internal', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='host.docker.internal', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-04 20:41:33,310 | ERROR | generator | Ollama error: HTTPConnectionPool(host='host.docker.internal', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='host.docker.internal', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-04 20:41:38,310 | ERROR | generator | Ollama error: HTTPConnectionPool(host='host.docker.internal', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='host.docker.internal', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-04 20:41:48,910 | ERROR | generator | Ollama error: HTTPConnectionPool(host='host.docker.internal', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='host.docker.internal', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-04 20:42:35,172 | ERROR | generator | Ollama error: HTTPConnectionPool(host='host.docker.internal', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='host.docker.internal', port=11434): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-04 20:44:42,681 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 20:56:19,184 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 20:56:19,184 | INFO | main | Запуск Flask API...
+2026-03-04 20:56:19,198 | INFO | main | Warmup: алиас/коллекция найдены, инициализирую поисковый движок...
+2026-03-04 20:56:19,199 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 20:56:24,633 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 20:56:24,633 | INFO | main | Warmup: поисковый движок готов
+2026-03-04 20:56:30,401 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-03-04 20:56:30,402 | INFO | routes_search | HybridSearchEngine создан (инициализация будет при первом поиске)
+2026-03-04 20:56:30,402 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 20:56:35,293 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 20:56:36,691 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 20:57:12,072 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 20:57:20,271 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 20:57:26,671 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 20:57:56,685 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 20:57:56,685 | INFO | main | Запуск Flask API...
+2026-03-04 20:57:56,698 | INFO | main | Warmup: алиас/коллекция найдены, инициализирую поисковый движок...
+2026-03-04 20:57:56,699 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 20:58:01,382 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 20:58:01,382 | INFO | main | Warmup: поисковый движок готов
+2026-03-04 20:58:04,809 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-03-04 20:58:04,811 | INFO | routes_search | HybridSearchEngine создан (инициализация будет при первом поиске)
+2026-03-04 20:58:04,811 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 20:58:09,304 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 20:58:10,445 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 20:58:33,818 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 20:58:46,798 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 20:58:46,799 | INFO | main | Запуск Flask API...
+2026-03-04 20:58:46,813 | INFO | main | Warmup: алиас/коллекция найдены, инициализирую поисковый движок...
+2026-03-04 20:58:46,814 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 20:58:51,348 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 20:58:51,348 | INFO | main | Warmup: поисковый движок готов
+2026-03-04 20:58:57,110 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-03-04 20:58:57,111 | INFO | routes_search | HybridSearchEngine создан (инициализация будет при первом поиске)
+2026-03-04 20:58:57,111 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 20:59:02,156 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 20:59:03,005 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 20:59:14,801 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 20:59:24,800 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 21:02:23,346 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 21:02:23,346 | INFO | main | Запуск Flask API...
+2026-03-04 21:02:23,359 | INFO | main | Warmup: алиас/коллекция найдены, инициализирую поисковый движок...
+2026-03-04 21:02:23,360 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 21:02:27,998 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 21:02:27,998 | INFO | main | Warmup: поисковый движок готов
+2026-03-04 21:03:22,202 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 21:03:22,202 | INFO | main | Запуск Flask API...
+2026-03-04 21:03:22,213 | INFO | main | Warmup: алиас/коллекция найдены, инициализирую поисковый движок...
+2026-03-04 21:03:22,214 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 21:03:26,587 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 21:03:26,587 | INFO | main | Warmup: поисковый движок готов
+2026-03-04 21:03:37,062 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-03-04 21:03:37,063 | INFO | routes_search | HybridSearchEngine создан (инициализация будет при первом поиске)
+2026-03-04 21:03:37,064 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 21:03:41,758 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 21:03:42,872 | ERROR | generator | Ollama error: 404 Client Error: Not Found for url: http://host.docker.internal:11434/api/generate
+2026-03-04 21:06:56,228 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 21:06:56,228 | INFO | main | Запуск Flask API...
+2026-03-04 21:06:56,243 | INFO | main | Warmup: алиас/коллекция найдены, инициализирую поисковый движок...
+2026-03-04 21:06:56,244 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 21:08:14,811 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-03-04 21:08:14,812 | INFO | routes_search | HybridSearchEngine создан (инициализация будет при первом поиске)
+2026-03-04 21:08:14,812 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 21:12:22,010 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 21:12:22,013 | INFO | main | Warmup: поисковый движок готов
+2026-03-04 21:12:22,059 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 21:13:00,378 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 21:13:00,378 | INFO | main | Запуск Flask API...
+2026-03-04 21:13:00,390 | INFO | main | Warmup: алиас/коллекция найдены, инициализирую поисковый движок...
+2026-03-04 21:13:00,391 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 21:18:20,414 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 21:18:20,414 | INFO | main | Warmup: поисковый движок готов
+2026-03-04 21:49:18,547 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-03-04 21:49:18,548 | INFO | routes_search | HybridSearchEngine создан (инициализация будет при первом поиске)
+2026-03-04 21:49:18,548 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 21:49:23,906 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 21:56:17,671 | INFO | main | Warmup: жду Milvus + коллекцию/алиас...
+2026-03-04 21:56:17,671 | INFO | main | Запуск Flask API...
+2026-03-04 21:56:17,686 | INFO | main | Warmup: алиас/коллекция найдены, инициализирую поисковый движок...
+2026-03-04 21:56:17,687 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 21:56:22,293 | INFO | routes_search | Создаю HybridSearchEngine (первый запрос)...
+2026-03-04 21:56:22,306 | INFO | routes_search | HybridSearchEngine создан (инициализация будет при первом поиске)
+2026-03-04 21:56:22,306 | INFO | search_engine | Инициализация поискового движка...
+2026-03-04 21:56:22,909 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 21:56:22,909 | INFO | main | Warmup: поисковый движок готов
+2026-03-04 21:56:27,210 | INFO | search_engine | Поисковый движок инициализирован
+2026-03-04 22:05:30,060 | INFO | scheduler | Плановый запуск ingestion pipeline... FORCE_REINDEX=False

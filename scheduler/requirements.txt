@@ -1,0 +1,13 @@
+#просто библиотеки
+
+apscheduler==3.10.4
+pymilvus==2.4.15
+requests==2.32.3
+beautifulsoup4==4.12.3
+sentence-transformers==3.0.1
+scikit-learn==1.5.1
+scipy==1.14.0
+numpy==1.26.4
+python-dotenv==1.0.1
+joblib==1.4.2
+psutil==6.0.0

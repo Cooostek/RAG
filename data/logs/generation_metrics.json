@@ -1,0 +1,191 @@
+[
+  {
+    "type": "generation",
+    "question": "API",
+    "answer_len": 24,
+    "context_chars": 1909,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-02-21T16:34:47.579479"
+  },
+  {
+    "type": "generation",
+    "question": "api",
+    "answer_len": 24,
+    "context_chars": 2129,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:40:26.463216"
+  },
+  {
+    "type": "generation",
+    "question": "портал",
+    "answer_len": 24,
+    "context_chars": 2205,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:41:33.310309"
+  },
+  {
+    "type": "generation",
+    "question": "портал",
+    "answer_len": 24,
+    "context_chars": 2205,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:41:38.310369"
+  },
+  {
+    "type": "generation",
+    "question": "api",
+    "answer_len": 24,
+    "context_chars": 339,
+    "top_k": 1,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:41:48.910736"
+  },
+  {
+    "type": "generation",
+    "question": "TV",
+    "answer_len": 24,
+    "context_chars": 278,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:42:35.172931"
+  },
+  {
+    "type": "generation",
+    "question": "TV",
+    "answer_len": 24,
+    "context_chars": 278,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:44:42.681814"
+  },
+  {
+    "type": "generation",
+    "question": "api",
+    "answer_len": 92,
+    "context_chars": 2129,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:56:36.691521"
+  },
+  {
+    "type": "generation",
+    "question": "tv",
+    "answer_len": 92,
+    "context_chars": 278,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:57:12.073062"
+  },
+  {
+    "type": "generation",
+    "question": "api",
+    "answer_len": 92,
+    "context_chars": 2129,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:57:20.271891"
+  },
+  {
+    "type": "generation",
+    "question": "key",
+    "answer_len": 92,
+    "context_chars": 1565,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:57:26.671538"
+  },
+  {
+    "type": "generation",
+    "question": "key",
+    "answer_len": 0,
+    "context_chars": 1565,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:58:10.445640"
+  },
+  {
+    "type": "generation",
+    "question": "key",
+    "answer_len": 0,
+    "context_chars": 1565,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:58:33.818903"
+  },
+  {
+    "type": "generation",
+    "question": "??? ????? ????? ????????",
+    "answer_len": 92,
+    "context_chars": 157,
+    "top_k": 3,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:59:03.005822"
+  },
+  {
+    "type": "generation",
+    "question": "портал",
+    "answer_len": 92,
+    "context_chars": 2205,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:59:14.801369"
+  },
+  {
+    "type": "generation",
+    "question": "портал",
+    "answer_len": 92,
+    "context_chars": 434,
+    "top_k": 1,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T20:59:24.800843"
+  },
+  {
+    "type": "generation",
+    "question": "портал",
+    "answer_len": 92,
+    "context_chars": 434,
+    "top_k": 1,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T21:03:42.872587"
+  },
+  {
+    "type": "generation",
+    "question": "портал",
+    "answer_len": 31,
+    "context_chars": 434,
+    "top_k": 1,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T21:12:23.749503"
+  },
+  {
+    "type": "generation",
+    "question": "api",
+    "answer_len": 18,
+    "context_chars": 339,
+    "top_k": 1,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T21:49:26.828951"
+  },
+  {
+    "type": "generation",
+    "question": "API Key",
+    "answer_len": 55,
+    "context_chars": 339,
+    "top_k": 1,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T21:49:46.665475"
+  },
+  {
+    "type": "generation",
+    "question": "API Key",
+    "answer_len": 37,
+    "context_chars": 1991,
+    "top_k": 5,
+    "alpha": 0.6,
+    "timestamp": "2026-03-04T21:49:57.587474"
+  }
+]
