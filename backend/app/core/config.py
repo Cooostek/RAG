@@ -11,8 +11,8 @@ class Settings:
     MILVUS_COLLECTION_ALIAS = os.getenv("MILVUS_COLLECTION_ALIAS", "knowledge_base_current")
 
     #И снова глупая моделька, ЗАМЕНИТЕ
-    OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
-    OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://host.docker.internal:11434")
+    OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3.6:latest")
+    OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://192.168.88.55:11434")
     OLLAMA_TIMEOUT = int(os.getenv("OLLAMA_TIMEOUT", "180"))
     
     #парсер
