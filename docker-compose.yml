@@ -69,10 +69,12 @@ services:
     container_name: rag_backend
     env_file: .env
     environment:
-      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      #- OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://192.168.88.55:11434}
       #модель по умолчанию (лучше поставить поумнее по типу квепнкодера и др)
-      - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.2:3b}
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-qwen3.6:latest}
       - OLLAMA_TIMEOUT=${OLLAMA_TIMEOUT:-180}
+    #проброс API‑порта
     #проброс API‑порта
     ports:
       - "5000:5000"
