@@ -11,7 +11,7 @@ def ask_ollama(question: str, context: str) -> str:
     base_url = getattr(settings, "OLLAMA_BASE_URL", None) or os.getenv("OLLAMA_BASE_URL") or "http://host.docker.internal:11434"
     base_url = base_url.rstrip("/")
     #ЗАМЕНИТЬ модельку
-    model = getattr(settings, "OLLAMA_MODEL", None) or os.getenv("OLLAMA_MODEL") or "llama3.2:3b"
+    model = getattr(settings, "OLLAMA_MODEL", None) or os.getenv("OLLAMA_MODEL") or "qwen3.6:latest"
     timeout = getattr(settings, "OLLAMA_TIMEOUT", None) or os.getenv("OLLAMA_TIMEOUT") or "180"
     timeout = int(timeout)
 
