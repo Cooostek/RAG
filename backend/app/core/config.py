@@ -10,7 +10,7 @@ class Settings:
     MILVUS_PORT = os.getenv("MILVUS_PORT", "19530")
     MILVUS_COLLECTION_ALIAS = os.getenv("MILVUS_COLLECTION_ALIAS", "knowledge_base_current")
 
-    #И снова глупая моделька, ЗАМЕНИТЕ
+    #И снова моделька
     OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3.6:latest")
     OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://192.168.88.55:11434")
     OLLAMA_TIMEOUT = int(os.getenv("OLLAMA_TIMEOUT", "180"))
