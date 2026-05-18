@@ -1,29 +1,50 @@
 name: Cleanup github runner caches on closed pull requests
+
+#запускает workflow при закрытии Pull Request (PR)
+#GitHub отправляет событие pull_request с типом closed, когда PR закрывают (не обязательно сливают — просто закрывают)
+
 on:
   pull_request:
     types:
       - closed
+
+#runs-on: ubuntu-latest — задание выполняется на виртуальном окружении Ubuntu последней версии
+#permissions: actions: write — даёт права на выполнение действий, включая управление кешем. Без этой настройки команда gh cache delete завершится ошибкой доступа
 
 jobs:
   cleanup:
     runs-on: ubuntu-latest
     permissions:
       actions: write
+
+#Шаг очистки
+
     steps:
       - name: Cleanup
         run: |
           echo "Fetching list of cache keys"
+
+          ##gh cache list — команда GitHub CLI для просмотра кешей
+          ##ref $BRANCH — фильтрует кеши по ссылке (в данном случае — по ветке PR)
+          ##limit 100 — ограничивает вывод 100 записями (защита от перегрузки)
+          ##json id --jq '.[].id' — извлекает только ID кешей в формате, удобном для обработки в цикле
+
           cacheKeysForPR=$(gh cache list --ref $BRANCH --limit 100 --json id --jq '.[].id')
 
-          ## Setting this to not fail the workflow while deleting cache keys.
+          ## Отключает остановку скрипта при ошибке. Если какой‑то кеш нельзя удалить (например, уже удалён), скрипт продолжит работу.
           set +e
           echo "Deleting caches..."
+          ## Перебирает все полученные ID кешей и удаляет их поочерёдно.
           for cacheKey in $cacheKeysForPR
           do
               gh cache delete $cacheKey
           done
           echo "Done"
         env:
+          ##GH_TOKEN — токен GitHub для аутентификации. ${{ github.token }} — автоматически генерируемый токен с правами текущего workflow.
+          ##GH_REPO — полный путь к репозиторию (например, username/repo).
+          ##BRANCH — ссылка на ветку PR в формате refs/pull/<номер>/merge. Это специальная ссылка, которую GitHub создаёт для тестирования слияния PR.
+
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           BRANCH: refs/pull/${{ github.event.pull_request.number }}/merge
