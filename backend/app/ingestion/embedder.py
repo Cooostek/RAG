@@ -1,12 +1,12 @@
 #гибридное встраивание 
 
-    """
-    Dense (SentenceTransformer) — 
-    хорошо ловит семантику, но требует больше памяти.
+"""
+Dense (SentenceTransformer) — 
+хорошо ловит семантику, но требует больше памяти.
     
-    Sparse (TF‑IDF) — 
-    эффективен для поиска по ключевым словам, компактен.
-    """
+Sparse (TF‑IDF) — 
+эффективен для поиска по ключевым словам, компактен.
+"""
 
 
 import os
@@ -15,6 +15,7 @@ import numpy as np
 import scipy.sparse as sp
 from sentence_transformers import SentenceTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 from app.core.config import settings
 from app.core.logger import setup_logger
